@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+      var number = 123;
+    </script>
     <title>Currency converter</title>
     
 </head>
-<body>
+<body onload="myFunction()">
+<h1>Currency converter</h1>
+<input
+  type="text"
+  id="temp"
+  name="temp"
+  required
+  minlength="1"
+  maxlength="16"
+  size="10"
+  placeholder="value"
+  value="" />
+<span>* </span><input
+  type="text"
+  id="factor"
+  name="factor"
+  required
+  minlength="1"
+  maxlength="16"
+  size="10"
+  placeholder="exchange rate" />
+<pre id="log">1</pre>
+<script type="text/javascript">
+  const logElement = document.getElementById("log");
+const inputElement = document.getElementById("temp");
+const factorElement= document.getElementById("factor");
+inputElement.addEventListener("keyup", () => {
+  logElement.innerText = `${inputElement.value*factorElement.value}`;
+});
+factorElement.addEventListener("keyup", () => {
+  logElement.innerText = `${inputElement.value*factorElement.value}`;
+});
+$("pre").css({"display":"inline","margin":"0"});
+</script>
     
 </body>
 </html>
