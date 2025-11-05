@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+  padding: 20px;
+}
+
+.titles {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+/* Container for both columns */
+#student,
+#module,
+#students,
+#modules {
+  box-sizing: border-box;
+}
+
+/* Layout: make the search bars and lists side by side */
+#student,
+#students {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+#module,
+#modules {
+  float: right;
+  width: 45%;
+}
+
+/* Inputs styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Lists styling */
+ul {
+  list-style: none;
+  padding: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+ul li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Clear floats so layout behaves properly */
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+}

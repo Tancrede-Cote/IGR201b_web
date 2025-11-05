@@ -1,4 +1,3 @@
-/* Reset & base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,14 +12,12 @@ body {
   padding: 60px 20px;
 }
 
-/* Title */
 .titles {
   font-size: 2.5rem;
   color: #34495e;
   margin-bottom: 40px;
 }
 
-/* Input fields */
 input[type="number"] {
   padding: 12px;
   font-size: 1.1rem;
@@ -37,7 +34,6 @@ input[type="number"]:focus {
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
-/* Multiply symbol */
 span {
   font-size: 1.5rem;
   margin: 0 5px;
@@ -45,7 +41,6 @@ span {
   vertical-align: middle;
 }
 
-/* Output display */
 #log {
   margin-top: 30px;
   display: inline-block;
